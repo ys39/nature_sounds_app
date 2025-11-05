@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自然音アプリ - Nature Sounds</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌿 自然音アプリ</h1>
+            <p>リラックスできる自然の音をお楽しみください</p>
+        </header>
+
+        <main>
+            <div class="sound-grid">
+                <div class="sound-card" data-sound="rain">
+                    <div class="sound-icon">🌧️</div>
+                    <h3>雨の音</h3>
+                    <p>静かな雨音</p>
+                    <button class="play-btn" data-sound="rain">再生</button>
+                </div>
+
+                <div class="sound-card" data-sound="ocean">
+                    <div class="sound-icon">🌊</div>
+                    <h3>波の音</h3>
+                    <p>穏やかな波の音</p>
+                    <button class="play-btn" data-sound="ocean">再生</button>
+                </div>
+
+                <div class="sound-card" data-sound="forest">
+                    <div class="sound-icon">🌲</div>
+                    <h3>森の音</h3>
+                    <p>森の中の環境音</p>
+                    <button class="play-btn" data-sound="forest">再生</button>
+                </div>
+
+                <div class="sound-card" data-sound="birds">
+                    <div class="sound-icon">🐦</div>
+                    <h3>鳥のさえずり</h3>
+                    <p>小鳥のさえずり</p>
+                    <button class="play-btn" data-sound="birds">再生</button>
+                </div>
+
+                <div class="sound-card" data-sound="fire">
+                    <div class="sound-icon">🔥</div>
+                    <h3>焚き火</h3>
+                    <p>パチパチと燃える音</p>
+                    <button class="play-btn" data-sound="fire">再生</button>
+                </div>
+
+                <div class="sound-card" data-sound="wind">
+                    <div class="sound-icon">💨</div>
+                    <h3>風の音</h3>
+                    <p>そよ風の音</p>
+                    <button class="play-btn" data-sound="wind">再生</button>
+                </div>
+
+                <div class="sound-card" data-sound="thunder">
+                    <div class="sound-icon">⚡</div>
+                    <h3>雷雨</h3>
+                    <p>雷と雨の音</p>
+                    <button class="play-btn" data-sound="thunder">再生</button>
+                </div>
+
+                <div class="sound-card" data-sound="stream">
+                    <div class="sound-icon">💧</div>
+                    <h3>小川</h3>
+                    <p>せせらぎの音</p>
+                    <button class="play-btn" data-sound="stream">再生</button>
+                </div>
+            </div>
+
+            <div class="controls">
+                <div class="volume-control">
+                    <label for="volume">
+                        <span class="volume-icon">🔊</span>
+                        音量
+                    </label>
+                    <input type="range" id="volume" min="0" max="100" value="50">
+                    <span id="volume-value">50%</span>
+                </div>
+                <button id="stop-all" class="stop-all-btn">すべて停止</button>
+            </div>
+        </main>
+
+        <footer>
+            <p>リラックスして自然の音を楽しんでください 🌸</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
