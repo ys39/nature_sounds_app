@@ -1,0 +1,21 @@
+{
+  "name": "nature-sounds-app",
+  "version": "1.0.0",
+  "description": "リラックスできる自然の音を楽しめるWebアプリケーション",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server -p 8080 -o",
+    "dev": "http-server -p 8080 -o"
+  },
+  "keywords": [
+    "nature",
+    "sounds",
+    "relaxation",
+    "web-audio-api"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
